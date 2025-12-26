@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with Tripventura's expert travel team 24/7. Get instant support via WhatsApp, email, or phone from our multilingual specialists in Dubai and Turkey.">
+    <title>Contact Us | Tripventura - 24/7 Travel Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .tap-target { min-height: 44px; min-width: 44px; }
+        html { scroll-behavior: smooth; }
+
+        /* Animated gradient background */
+        .gradient-animate {
+            background: linear-gradient(-45deg, #e4010f, #ff4757, #c7000d, #ff6b81);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+        .float { animation: float 5s ease-in-out infinite; }
+        .float-delay { animation: float 5s ease-in-out 1s infinite; }
+        .float-delay-2 { animation: float 5s ease-in-out 2s infinite; }
+
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* FAQ */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .faq-content.active { max-height: 500px; }
+        .faq-icon { transition: transform 0.3s ease; }
+        .faq-icon.active { transform: rotate(45deg); }
+
+        /* Card shine effect */
+        .card-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .card-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                transparent 0%,
+                rgba(255,255,255,0.1) 50%,
+                transparent 100%
+            );
+            transform: rotate(30deg);
+            transition: transform 0.6s ease;
+        }
+        .card-shine:hover::after {
+            transform: rotate(30deg) translateX(100%);
+        }
+
+        /* Blob shapes */
+        .blob {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: blobMorph 8s ease-in-out infinite;
+        }
+        @keyframes blobMorph {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-600 bg-white">
+
+    <!-- ========================================================================
+         VARIANT 5: BOLD & VIBRANT - Split Hero with Animated Elements
+         Design Philosophy: High-energy, modern, conversion-focused
+         ======================================================================== -->
+
+    <!-- HERO: Split Layout with Animated Brand Side -->
+    <section class="min-h-screen flex flex-col lg:flex-row">
+
+        <!-- Left: Brand Side with Animation -->
+        <div class="lg:w-1/2 gradient-animate relative flex items-center justify-center p-8 lg:p-16 min-h-[50vh] lg:min-h-screen">
+            <!-- Floating decorative elements -->
+            <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full float"></div>
+            <div class="absolute bottom-32 right-16 w-32 h-32 bg-white/10 blob float-delay"></div>
+            <div class="absolute top-1/2 right-10 w-16 h-16 bg-brand-secondary/30 rounded-lg rotate-12 float-delay-2"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-white text-center lg:text-left max-w-lg">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">Online Now - Avg. 5 min response</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                    Let's Plan Your
+                    <span class="block text-brand-secondary">Dream Trip</span>
+                </h1>
+
+                <p class="text-lg text-white/80 mb-8 leading-relaxed">
+                    Our travel experts are ready to help you explore Dubai and Turkey.
+                    Real humans, instant answers, 14+ languages.
+                </p>
+
+                <!-- Quick stats -->
+                <div class="grid grid-cols-3 gap-4 p-4 bg-white/10 backdrop-blur rounded-2xl">
+                    <div class="text-center">
+                        <span class="block text-2xl font-black">10K+</span>
+                        <span class="text-xs text-white/70">Happy Guests</span>
+                    </div>
+                    <div class="text-center border-x border-white/20">
+                        <span class="block text-2xl font-black">4.9</span>
+                        <span class="text-xs text-white/70">Rating</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-2xl font-black">24/7</span>
+                        <span class="text-xs text-white/70">Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Contact Form Side -->
+        <div class="lg:w-1/2 bg-white flex items-center justify-center p-8 lg:p-16">
+            <div class="w-full max-w-md">
+                <h2 class="text-2xl font-bold text-brand-darktext mb-2">Get in Touch</h2>
+                <p class="text-gray-500 mb-8">Choose your preferred way to connect with us.</p>
+
+                <!-- Primary CTA: WhatsApp -->
+                <a href="https://wa.me/971585971234"
+                   class="tap-target group flex items-center gap-4 w-full p-5 bg-green-500 text-white rounded-2xl hover:bg-green-600 hover:shadow-xl hover:shadow-green-500/30 transition-all duration-300 mb-4">
+                    <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <span class="block font-bold text-lg">Chat on WhatsApp</span>
+                        <span class="text-green-100 text-sm">Usually replies in 5 minutes</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xl opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                </a>
+
+                <!-- Secondary options -->
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <a href="mailto:info@tripventura.com"
+                       class="tap-target group p-5 border-2 border-gray-200 rounded-2xl hover:border-brand hover:shadow-lg transition-all duration-300 text-center">
+                        <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-regular fa-envelope text-brand text-xl"></i>
+                        </div>
+                        <span class="block font-semibold text-brand-darktext">Email</span>
+                        <span class="text-xs text-gray-400">2-4 hours</span>
+                    </a>
+                    <a href="tel:+971585971234"
+                       class="tap-target group p-5 border-2 border-gray-200 rounded-2xl hover:border-brand hover:shadow-lg transition-all duration-300 text-center">
+                        <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-phone text-brand text-xl"></i>
+                        </div>
+                        <span class="block font-semibold text-brand-darktext">Call Us</span>
+                        <span class="text-xs text-gray-400">Office hours</span>
+                    </a>
+                </div>
+
+                <!-- Phone numbers -->
+                <div class="bg-gray-50 rounded-2xl p-5 mb-6">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 block">Direct Lines</span>
+                    <div class="space-y-3">
+                        <a href="tel:+971585971234" class="flex items-center justify-between text-brand-darktext hover:text-brand transition-colors">
+                            <span class="flex items-center gap-2">
+                                <span class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm text-xs font-bold">UAE</span>
+                                <span class="font-semibold">+971 58 597 1234</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="tel:+905418639883" class="flex items-center justify-between text-brand-darktext hover:text-brand transition-colors">
+                            <span class="flex items-center gap-2">
+                                <span class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm text-xs font-bold">TR</span>
+                                <span class="font-semibold">+90 541 863 9883</span>
+                            </span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Trust badges -->
+                <div class="flex items-center justify-center gap-4 text-gray-400 text-sm">
+                    <div class="flex items-center gap-1">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Secure</span>
+                    </div>
+                    <div class="w-px h-4 bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Licensed</span>
+                    </div>
+                    <div class="w-px h-4 bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="flex text-brand-secondary text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>4.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL EXPERTS: Horizontal Scroll Cards -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12 reveal">
+                <div>
+                    <span class="text-brand font-bold uppercase tracking-widest text-sm">Our Team</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Chat with an Expert</h2>
+                </div>
+                <p class="text-gray-500 mt-4 md:mt-0 max-w-sm">Personal travel specialists who know every corner of Dubai and Turkey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+                <!-- Expert 1 -->
+                <div class="group bg-white rounded-3xl p-6 shadow-sm hover:shadow-2xl transition-all duration-500 card-shine">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="relative">
+                            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center text-white text-3xl font-bold">
+                                D
+                            </div>
+                            <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 border-4 border-white rounded-full"></span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-brand-darktext">Damla</h3>
+                            <p class="text-brand text-sm">UAE Specialist</p>
+                            <div class="flex items-center gap-1 mt-2 text-brand-secondary text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold">4.9</span>
+                                <span class="text-gray-400">(2,340 chats)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">English</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Turkish</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">German</span>
+                    </div>
+
+                    <a href="https://wa.me/971585971234?text=Hi%20Damla"
+                       class="tap-target flex items-center justify-center gap-2 w-full py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all group-hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Chat Now
+                    </a>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="group bg-white rounded-3xl p-6 shadow-sm hover:shadow-2xl transition-all duration-500 card-shine">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="relative">
+                            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-3xl font-bold">
+                                M
+                            </div>
+                            <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 border-4 border-white rounded-full"></span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-brand-darktext">Michelle</h3>
+                            <p class="text-blue-600 text-sm">Turkey Specialist</p>
+                            <div class="flex items-center gap-1 mt-2 text-brand-secondary text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold">4.8</span>
+                                <span class="text-gray-400">(1,890 chats)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">English</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Filipino</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Turkish</span>
+                    </div>
+
+                    <a href="https://wa.me/905418639883?text=Hi%20Michelle"
+                       class="tap-target flex items-center justify-center gap-2 w-full py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all group-hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Chat Now
+                    </a>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="group bg-white rounded-3xl p-6 shadow-sm hover:shadow-2xl transition-all duration-500 card-shine">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="relative">
+                            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white text-3xl font-bold">
+                                J
+                            </div>
+                            <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-gray-400 border-4 border-white rounded-full"></span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-brand-darktext">Jowen</h3>
+                            <p class="text-amber-600 text-sm">Customer Care Lead</p>
+                            <div class="flex items-center gap-1 mt-2 text-brand-secondary text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold">5.0</span>
+                                <span class="text-gray-400">(3,120 chats)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">English</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium">Arabic</span>
+                    </div>
+
+                    <a href="https://wa.me/971585971234?text=Hi%20Jowen"
+                       class="tap-target flex items-center justify-center gap-2 w-full py-4 bg-green-500 text-white font-bold rounded-xl hover:bg-green-600 transition-all group-hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Chat Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFICES: Modern Bento Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-brand font-bold uppercase tracking-widest text-sm">Our Locations</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Global Offices</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto reveal">
+                <!-- Dubai -->
+                <div class="group relative rounded-3xl overflow-hidden h-80 lg:h-96">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070"
+                         alt="Dubai"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <span class="inline-flex items-center gap-2 bg-brand text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-4">
+                            <i class="fa-solid fa-crown"></i> Headquarters
+                        </span>
+                        <h3 class="text-3xl font-bold text-white mb-2">Dubai, UAE</h3>
+                        <p class="text-white/70 text-sm mb-4">Al Barsha 1, Sheikh Zayed Rd</p>
+
+                        <div class="flex flex-wrap gap-3">
+                            <a href="tel:+971585971234" class="tap-target flex items-center gap-2 bg-white/20 backdrop-blur text-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-brand-darktext transition-all">
+                                <i class="fa-solid fa-phone"></i>
+                                +971 58 597 1234
+                            </a>
+                            <a href="https://maps.google.com/?q=Al+Barsha+Dubai" target="_blank" class="tap-target flex items-center gap-2 bg-white/20 backdrop-blur text-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-brand-darktext transition-all">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Directions
+                            </a>
+                        </div>
+
+                        <div class="mt-4 pt-4 border-t border-white/20 flex items-center gap-2 text-white/60 text-sm">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>DET License #1206537</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turkey -->
+                <div class="group relative rounded-3xl overflow-hidden h-80 lg:h-96">
+                    <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071"
+                         alt="Turkey"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <span class="inline-flex items-center gap-2 bg-blue-500 text-white text-xs font-bold px-3 py-1.5 rounded-full w-fit mb-4">
+                            <i class="fa-solid fa-plane"></i> Operations
+                        </span>
+                        <h3 class="text-3xl font-bold text-white mb-2">Antalya, Turkey</h3>
+                        <p class="text-white/70 text-sm mb-4">Alanya, Mediterranean Coast</p>
+
+                        <div class="flex flex-wrap gap-3">
+                            <a href="tel:+905418639883" class="tap-target flex items-center gap-2 bg-white/20 backdrop-blur text-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-brand-darktext transition-all">
+                                <i class="fa-solid fa-phone"></i>
+                                +90 541 863 9883
+                            </a>
+                            <a href="https://maps.google.com/?q=Alanya+Turkey" target="_blank" class="tap-target flex items-center gap-2 bg-white/20 backdrop-blur text-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-brand-darktext transition-all">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Directions
+                            </a>
+                        </div>
+
+                        <div class="mt-4 pt-4 border-t border-white/20 flex items-center gap-2 text-white/60 text-sm">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>TURSAB Accredited</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS & RESPONSE: Side by Side -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 reveal">
+
+                <!-- Business Hours -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 gradient-animate rounded-2xl flex items-center justify-center">
+                            <i class="fa-regular fa-clock text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-darktext">Business Hours</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                            <div class="flex items-center gap-3">
+                                <span class="w-3 h-3 bg-brand rounded-full"></span>
+                                <span class="font-semibold text-brand-darktext">Dubai Office</span>
+                            </div>
+                            <span class="text-gray-600 text-sm">Sun-Thu 9AM-6PM</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
+                            <div class="flex items-center gap-3">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+                                <span class="font-semibold text-brand-darktext">Turkey Office</span>
+                            </div>
+                            <span class="text-gray-600 text-sm">Mon-Sat 9AM-7PM</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-green-50 rounded-xl border-2 border-green-200">
+                            <div class="flex items-center gap-3">
+                                <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                                <span class="font-semibold text-brand-darktext">WhatsApp</span>
+                            </div>
+                            <span class="text-green-600 font-bold text-sm">24/7 Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Response Times -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 bg-brand-darktext rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-bolt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-darktext">Response Times</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+                            <i class="fa-brands fa-whatsapp text-green-500 text-2xl"></i>
+                            <div class="flex-1">
+                                <span class="block font-semibold text-brand-darktext">WhatsApp</span>
+                                <span class="text-gray-500 text-sm">Instant messaging</span>
+                            </div>
+                            <span class="text-2xl font-black text-green-600">5 min</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                            <i class="fa-regular fa-envelope text-brand text-2xl"></i>
+                            <div class="flex-1">
+                                <span class="block font-semibold text-brand-darktext">Email</span>
+                                <span class="text-gray-500 text-sm">Detailed inquiries</span>
+                            </div>
+                            <span class="text-2xl font-black text-brand">2-4 hrs</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
+                            <i class="fa-solid fa-phone text-brand-darktext text-2xl"></i>
+                            <div class="flex-1">
+                                <span class="block font-semibold text-brand-darktext">Phone</span>
+                                <span class="text-gray-500 text-sm">Office hours only</span>
+                            </div>
+                            <span class="text-2xl font-black text-brand-darktext">Instant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ: Clean Accordion -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-brand font-bold uppercase tracking-widest text-sm">FAQ</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Common Questions</h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4 reveal">
+                <div class="bg-gray-50 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-brand-darktext text-lg">How can I modify or cancel my booking?</span>
+                        <i class="fa-solid fa-plus faq-icon text-brand text-xl"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-6 text-gray-600">Most tours can be cancelled up to 24 hours before for a full refund. Contact us via WhatsApp or email with your booking reference.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-brand-darktext text-lg">Do you provide hotel pickup?</span>
+                        <i class="fa-solid fa-plus faq-icon text-brand text-xl"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-6 text-gray-600">Yes! Most tours include complimentary hotel pickup from central Dubai and Antalya locations. Pickup time confirmed 24 hours before.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-brand-darktext text-lg">What languages do you support?</span>
+                        <i class="fa-solid fa-plus faq-icon text-brand text-xl"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-6 text-gray-600">We support 14+ languages including English, German, Turkish, French, Spanish, Italian, Russian, and Arabic. Let us know your preference!</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-brand-darktext text-lg">What payment methods do you accept?</span>
+                        <i class="fa-solid fa-plus faq-icon text-brand text-xl"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-6 text-gray-600">We accept Visa, Mastercard, Amex, and PayPal. All payments are 256-bit encrypted. Group bookings can use bank transfer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 reveal">
+                <p class="text-gray-500 mb-4">Still have questions?</p>
+                <a href="https://wa.me/971585971234" class="tap-target inline-flex items-center gap-2 bg-brand text-white font-bold py-4 px-8 rounded-full hover:bg-brand-dark transition-all">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Ask an Expert
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES FOOTER -->
+    <section class="py-12 bg-brand-darktext">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 gradient-animate rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-globe text-white text-xl"></i>
+                    </div>
+                    <div class="text-white">
+                        <span class="font-bold text-lg">We Speak Your Language</span>
+                        <span class="block text-white/60 text-sm">14+ languages supported</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">English</span>
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">Deutsch</span>
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">Turkce</span>
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">Francais</span>
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">Espanol</span>
+                    <span class="px-3 py-1.5 bg-white/10 rounded-full text-sm text-white">Italiano</span>
+                    <span class="px-3 py-1.5 bg-brand/50 rounded-full text-sm text-white font-bold">+8 more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFAQ(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isActive = content.classList.contains('active');
+
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('active'));
+
+            if (!isActive) {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
