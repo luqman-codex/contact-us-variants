@@ -112,64 +112,15 @@
 <body class="font-sans antialiased text-gray-600 bg-white">
 
     <!-- ========================================================================
-         VARIANT 5: BOLD & VIBRANT - Split Hero with Animated Elements
+         VARIANT 5B: BOLD & VIBRANT - Split Hero FLIPPED (Image on Right)
          Design Philosophy: High-energy, modern, conversion-focused
          ======================================================================== -->
 
-    <!-- HERO: Split Layout with Animated Brand Side -->
+    <!-- HERO: Split Layout with Image on Right -->
     <section class="min-h-screen flex flex-col lg:flex-row">
 
-        <!-- Left: Brand Side with Background Image -->
-        <div class="lg:w-1/2 relative flex items-center justify-center p-8 lg:p-16 min-h-[50vh] lg:min-h-screen">
-            <!-- Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center"
-                 style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop');"></div>
-            <!-- Gradient Overlay -->
-            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(228, 1, 15, 0.7) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%);"></div>
-
-            <!-- Floating decorative elements -->
-            <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full float z-10"></div>
-            <div class="absolute bottom-32 right-16 w-32 h-32 bg-white/10 blob float-delay z-10"></div>
-            <div class="absolute top-1/2 right-10 w-16 h-16 bg-brand-secondary/30 rounded-lg rotate-12 float-delay-2 z-10"></div>
-
-            <!-- Content -->
-            <div class="relative z-20 text-white text-center lg:text-left max-w-lg">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 mb-6">
-                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                    <span class="text-sm font-medium">Online Now - Avg. 5 min response</span>
-                </div>
-
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-                    Let's Plan Your
-                    <span class="block text-brand-secondary">Dream Trip</span>
-                </h1>
-
-                <p class="text-lg text-white/80 mb-8 leading-relaxed">
-                    Our travel experts are ready to help you explore Dubai and Turkey.
-                    Real humans, instant answers, 14+ languages.
-                </p>
-
-                <!-- Quick stats -->
-                <div class="grid grid-cols-3 gap-4 p-4 bg-white/10 backdrop-blur rounded-2xl">
-                    <div class="text-center">
-                        <span class="block text-2xl font-black">10K+</span>
-                        <span class="text-xs text-white/70">Happy Guests</span>
-                    </div>
-                    <div class="text-center border-x border-white/20">
-                        <span class="block text-2xl font-black">4.9</span>
-                        <span class="text-xs text-white/70">Rating</span>
-                    </div>
-                    <div class="text-center">
-                        <span class="block text-2xl font-black">24/7</span>
-                        <span class="text-xs text-white/70">Support</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right: Contact Form Side -->
-        <div class="lg:w-1/2 bg-white flex items-center justify-center p-8 lg:p-16">
+        <!-- Left: Contact Form Side -->
+        <div class="lg:w-1/2 bg-white flex items-center justify-center p-8 lg:p-16 order-2 lg:order-1">
             <div class="w-full max-w-md">
                 <h2 class="text-2xl font-bold text-brand-darktext mb-2">Get in Touch</h2>
                 <p class="text-gray-500 mb-8">Choose your preferred way to connect with us.</p>
@@ -249,6 +200,55 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <span>4.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Brand Side with Background Image -->
+        <div class="lg:w-1/2 relative flex items-center justify-center p-8 lg:p-16 min-h-[50vh] lg:min-h-screen order-1 lg:order-2">
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center"
+                 style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop');"></div>
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(228, 1, 15, 0.7) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%);"></div>
+
+            <!-- Floating decorative elements -->
+            <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full float z-10"></div>
+            <div class="absolute bottom-32 right-16 w-32 h-32 bg-white/10 blob float-delay z-10"></div>
+            <div class="absolute top-1/2 right-10 w-16 h-16 bg-brand-secondary/30 rounded-lg rotate-12 float-delay-2 z-10"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 text-white text-center lg:text-right max-w-lg">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">Online Now - Avg. 5 min response</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                    Let's Plan Your
+                    <span class="block text-brand-secondary">Dream Trip</span>
+                </h1>
+
+                <p class="text-lg text-white/80 mb-8 leading-relaxed">
+                    Our travel experts are ready to help you explore Dubai and Turkey.
+                    Real humans, instant answers, 14+ languages.
+                </p>
+
+                <!-- Quick stats -->
+                <div class="grid grid-cols-3 gap-4 p-4 bg-white/10 backdrop-blur rounded-2xl">
+                    <div class="text-center">
+                        <span class="block text-2xl font-black">10K+</span>
+                        <span class="text-xs text-white/70">Happy Guests</span>
+                    </div>
+                    <div class="text-center border-x border-white/20">
+                        <span class="block text-2xl font-black">4.9</span>
+                        <span class="text-xs text-white/70">Rating</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-2xl font-black">24/7</span>
+                        <span class="text-xs text-white/70">Support</span>
                     </div>
                 </div>
             </div>
