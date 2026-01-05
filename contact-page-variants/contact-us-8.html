@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Tripventura's offices in Dubai and Turkey. Find our locations, contact details, and frequently asked questions.">
+    <title>Our Offices & FAQ | Tripventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            darktext: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Anton', 'sans-serif'],
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tap-target { min-height: 44px; min-width: 44px; }
+        html { scroll-behavior: smooth; }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+        }
+        .faq-content.active { max-height: 500px; }
+        .faq-icon { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .faq-icon.active { transform: rotate(180deg); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-600 bg-white">
+
+    <!-- Simple Header -->
+    <header class="py-6 border-b border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <a href="/" class="font-display text-2xl text-brand-darktext uppercase">Tripventura</a>
+                <a href="https://wa.me/971585971234" class="tap-target inline-flex items-center gap-2 bg-green-500 text-white font-semibold text-sm py-2.5 px-5 rounded-full hover:bg-green-600 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">Chat with Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Office Locations -->
+    <section class="py-16 md:py-24 relative overflow-hidden" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
+        <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0); background-size: 24px 24px;"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-brand-light text-brand font-bold uppercase tracking-widest text-xs px-4 py-2 rounded-full mb-4">Visit Us</span>
+                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-brand-darktext uppercase">Our Global Offices</h1>
+                <p class="text-gray-500 mt-4">Licensed, local, and ready to welcome you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Dubai Office -->
+                <article class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 reveal stagger-1">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop"
+                             alt="Dubai Skyline"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-brand text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
+                            <i class="fa-solid fa-crown"></i>
+                            Headquarters
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h2 class="font-display text-3xl mb-1 uppercase">Dubai</h2>
+                            <p class="text-white/80 text-sm">United Arab Emirates</p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <address class="not-italic space-y-4 text-sm text-gray-600 mb-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Address</span>
+                                    <span class="text-brand-darktext">AB Center, BC-204, Sheikh Zayed Rd, Al Barsha, Dubai</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Phone</span>
+                                    <a href="tel:+971585971234" class="text-brand-darktext hover:text-brand transition-colors font-medium">+971 58 597 1234</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Office Hours</span>
+                                    <span class="text-brand-darktext">Sun - Thu: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </address>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                                    <i class="fa-solid fa-certificate text-green-600"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-gray-400 uppercase block">DET License</span>
+                                    <span class="font-bold text-brand-darktext">#1206537</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Al+Barsha+Dubai+UAE" target="_blank"
+                               class="tap-target flex items-center gap-2 text-brand font-semibold text-sm hover:underline group/link">
+                                Get Directions
+                                <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover/link:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Turkey Office -->
+                <article class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 reveal stagger-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop"
+                             alt="Turkey Coast"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-brand-darktext text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
+                            <i class="fa-solid fa-plane"></i>
+                            Operations
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h2 class="font-display text-3xl mb-1 uppercase">Antalya</h2>
+                            <p class="text-white/80 text-sm">Turkey</p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <address class="not-italic space-y-4 text-sm text-gray-600 mb-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Address</span>
+                                    <span class="text-brand-darktext">Sekerhane Mah. Hukumet Cad. Koseoglu Ishani Apt. No:83, Alanya</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Phone</span>
+                                    <a href="tel:+905418639883" class="text-brand-darktext hover:text-brand transition-colors font-medium">+90 541 863 9883</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase font-semibold mb-1">Office Hours</span>
+                                    <span class="text-brand-darktext">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </address>
+                        <div class="pt-6 border-t border-gray-100 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center">
+                                    <i class="fa-solid fa-globe text-brand"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-gray-400 uppercase block">Accreditation</span>
+                                    <span class="font-bold text-brand-darktext">TURSAB Member</span>
+                                </div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Alanya+Antalya+Turkey" target="_blank"
+                               class="tap-target flex items-center gap-2 text-brand font-semibold text-sm hover:underline group/link">
+                                Get Directions
+                                <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover/link:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-brand-light text-brand font-bold uppercase tracking-widest text-xs px-4 py-2 rounded-full mb-4">Support</span>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-brand-darktext uppercase">Frequently Asked Questions</h2>
+                <p class="text-gray-500 mt-4 max-w-xl mx-auto">Quick answers to common questions about booking, payments, and travel.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4 reveal">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">How do I book a tour with Tripventura?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">You can book directly through our website, via WhatsApp, or by calling our team. Simply choose your preferred tour, select your dates, and complete the booking form. Our team will confirm availability and send you a detailed itinerary within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">What payment methods do you accept?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">We accept all major credit cards (Visa, MasterCard, American Express), bank transfers, and cash payments at our offices. For online bookings, we use secure payment gateways to protect your information. Payment plans are available for select packages.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">What is your cancellation policy?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">Free cancellation is available up to 48 hours before your tour for most packages. Cancellations within 48 hours may incur a 50% charge. No-shows are non-refundable. Some special packages or peak season bookings may have different terms - these will be clearly stated at booking.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">Do you offer airport pickup services?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">Yes! We offer complimentary airport pickup for most tour packages in Dubai and Turkey. For standalone transfer services, we provide comfortable private vehicles with professional drivers. Just share your flight details and we'll be there waiting for you.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">Can I customize my tour package?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">Absolutely! We specialize in creating personalized travel experiences. Whether you want to extend your stay, add specific activities, or create an entirely custom itinerary, our travel experts will work with you to design your perfect trip. Contact us via WhatsApp for custom quotes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+                    <button onclick="toggleFAQ(this)" class="tap-target w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-brand-darktext pr-4">What languages does your team speak?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon text-brand text-sm flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-600 pb-6">Our multilingual team provides support in 14+ languages including English, German, Turkish, French, Spanish, Italian, Russian, Arabic, and more. We ensure you can communicate comfortably throughout your journey, from booking to your return home.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still have questions CTA -->
+            <div class="text-center mt-12 reveal">
+                <p class="text-gray-500 mb-4">Still have questions?</p>
+                <a href="https://wa.me/971585971234?text=Hi,%20I%20have%20a%20question%20about%20your%20services"
+                   class="tap-target inline-flex items-center gap-3 bg-green-500 text-white font-bold py-4 px-8 rounded-full hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-green-500/30">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Chat with Us on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="py-8 bg-brand-darktext">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                <p>&copy; 2024 Tripventura. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="mailto:info@tripventura.com" class="hover:text-white transition-colors">info@tripventura.com</a>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            const isActive = content.classList.contains('active');
+
+            document.querySelectorAll('.faq-content').forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('.faq-icon').forEach(item => item.classList.remove('active'));
+
+            if (!isActive) {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Tripventura's dynamic team. Explore exciting career opportunities in travel and tourism across Dubai and Turkey.">
+    <title>Careers | Tripventura - Join Our Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .tap-target { min-height: 44px; min-width: 44px; }
+        html { scroll-behavior: smooth; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .job-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Modal Styles */
+        .modal-backdrop {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .modal-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            transform: translateY(20px) scale(0.95);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        .modal-backdrop.active .modal-content {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+
+        /* Custom scrollbar for modal */
+        .modal-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .modal-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .modal-scroll::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+        .modal-scroll::-webkit-scrollbar-thumb:hover {
+            background: #aaa;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-600 bg-white">
+
+    <!-- ========================================================================
+         VARIANT 1: WITH MODAL - Click job to open modal popup
+         ======================================================================== -->
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[70vh] flex items-center">
+        <div class="absolute inset-0 bg-cover bg-center"
+             style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 relative z-10 py-16 sm:py-20">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-white text-xs sm:text-sm font-medium">We're Hiring</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                    Build Your Career<br>
+                    <span class="text-brand">With Tripventura</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 leading-relaxed max-w-xl">
+                    Join a passionate team shaping unforgettable travel experiences across Dubai and Turkey.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <a href="#open-positions" class="tap-target inline-flex items-center justify-center gap-2 bg-brand text-white font-semibold py-3 px-6 rounded-full hover:bg-brand-dark transition-all text-sm sm:text-base">
+                        <span>View Open Positions</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#why-join" class="tap-target inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur border border-white/30 text-white font-semibold py-3 px-6 rounded-full hover:bg-white/20 transition-all text-sm sm:text-base">
+                        Why Join Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="bg-brand-darktext py-6 sm:py-8">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">50+</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Team Members</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">2</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Global Offices</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">15+</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Nationalities</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">7</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Years Growing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section id="why-join" class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-12 reveal">
+                <span class="text-brand font-semibold text-xs sm:text-sm uppercase tracking-wider">Why Join Us</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Benefits & Perks</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 reveal">
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-plane text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Travel Discounts</h3>
+                    <p class="text-gray-500 text-sm">Exclusive discounts on tours and travel packages for you and your family.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-laptop-house text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Flexible Work</h3>
+                    <p class="text-gray-500 text-sm">Hybrid work options with flexible hours to maintain work-life balance.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-graduation-cap text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Learning & Growth</h3>
+                    <p class="text-gray-500 text-sm">Continuous learning opportunities and career development programs.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-heart-pulse text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Health Insurance</h3>
+                    <p class="text-gray-500 text-sm">Comprehensive health coverage for you and your dependents.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-users text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Great Team</h3>
+                    <p class="text-gray-500 text-sm">Work with passionate, multicultural team from around the world.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-trophy text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Performance Bonus</h3>
+                    <p class="text-gray-500 text-sm">Competitive salary with performance-based bonuses and incentives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section id="open-positions" class="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-12 reveal">
+                <span class="text-brand font-semibold text-xs sm:text-sm uppercase tracking-wider">Opportunities</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Open Positions</h2>
+                <p class="text-gray-500 mt-3 max-w-lg mx-auto text-sm sm:text-base">Find your perfect role and start your journey with us.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4 reveal">
+                <!-- Job 1 - Customer Success Specialist -->
+                <button onclick="openJobModal('customer-success')" class="job-card w-full text-left bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-headset text-brand text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Customer Success Specialist</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Dubai, UAE
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> Immediate
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">View Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Job 2 - Digital Marketing Manager -->
+                <button onclick="openJobModal('marketing')" class="job-card w-full text-left bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-chart-line text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Digital Marketing Manager</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Dubai, UAE
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> 2 weeks
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">View Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Job 3 - Tour Operations Coordinator -->
+                <button onclick="openJobModal('operations')" class="job-card w-full text-left bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-map text-green-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Tour Operations Coordinator</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Antalya, Turkey
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> Immediate
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">View Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Job 4 - Frontend Developer -->
+                <button onclick="openJobModal('developer')" class="job-card w-full text-left bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-code text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Frontend Developer</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Remote
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> 1 month
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">View Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application CTA -->
+    <section class="py-12 sm:py-16 md:py-20 bg-brand-darktext">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-2xl mx-auto text-center reveal">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">Don't See Your Role?</h2>
+                <p class="text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">We're always looking for talented people. Send us your CV and we'll keep you in mind for future opportunities.</p>
+                <a href="mailto:careers@tripventura.com" class="tap-target inline-flex items-center justify-center gap-2 bg-brand text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full hover:bg-brand-dark transition-all text-sm sm:text-base">
+                    <i class="fa-solid fa-envelope"></i>
+                    Send Your CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-gray-400 text-sm">
+                    &copy; 2024 Tripventura. All rights reserved.
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================
+         JOB DETAIL MODAL
+         ======================================================================== -->
+    <div id="jobModal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4" onclick="closeModal(event)">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+        <!-- Modal Content -->
+        <div class="modal-content relative bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white border-b border-gray-100 px-5 sm:px-6 py-4 flex items-center justify-between z-10">
+                <div>
+                    <span id="modalDepartment" class="text-brand text-xs font-semibold uppercase tracking-wider">Department</span>
+                    <h2 id="modalTitle" class="font-bold text-brand-darktext text-lg sm:text-xl">Job Title</h2>
+                </div>
+                <button onclick="closeModal()" class="tap-target w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+                    <i class="fa-solid fa-xmark text-gray-400 text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-scroll overflow-y-auto px-5 sm:px-6 py-5" style="max-height: calc(90vh - 180px);">
+                <!-- Job Meta -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span id="modalLocation" class="inline-flex items-center gap-2 text-sm text-gray-500 bg-gray-50 rounded-full px-3 py-1.5">
+                        <i class="fa-solid fa-location-dot text-brand"></i>
+                        <span>Location</span>
+                    </span>
+                    <span id="modalType" class="inline-flex items-center gap-2 text-sm text-gray-500 bg-gray-50 rounded-full px-3 py-1.5">
+                        <i class="fa-solid fa-briefcase text-brand"></i>
+                        <span>Type</span>
+                    </span>
+                    <span id="modalSalary" class="inline-flex items-center gap-2 text-sm text-gray-500 bg-gray-50 rounded-full px-3 py-1.5">
+                        <i class="fa-solid fa-money-bill text-brand"></i>
+                        <span>Salary</span>
+                    </span>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-6">
+                    <h3 class="font-bold text-brand-darktext mb-3">About the Role</h3>
+                    <p id="modalDescription" class="text-gray-600 text-sm leading-relaxed">Description here...</p>
+                </div>
+
+                <!-- Responsibilities -->
+                <div class="mb-6">
+                    <h3 class="font-bold text-brand-darktext mb-3">What You'll Do</h3>
+                    <ul id="modalResponsibilities" class="space-y-2 text-sm text-gray-600">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <!-- Requirements -->
+                <div class="mb-6">
+                    <h3 class="font-bold text-brand-darktext mb-3">Requirements</h3>
+                    <ul id="modalRequirements" class="space-y-2 text-sm text-gray-600">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <!-- Benefits -->
+                <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                    <h3 class="font-bold text-brand-darktext mb-3 text-sm">What We Offer</h3>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Health Insurance</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Travel Discounts</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Flexible Hours</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Performance Bonus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="sticky bottom-0 bg-white border-t border-gray-100 px-5 sm:px-6 py-4 flex flex-col sm:flex-row gap-3">
+                <a id="modalApplyEmail" href="mailto:careers@tripventura.com" class="tap-target flex-1 inline-flex items-center justify-center gap-2 bg-brand text-white font-semibold py-3 px-6 rounded-xl hover:bg-brand-dark transition-colors text-sm">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Apply Now
+                </a>
+                <button onclick="closeModal()" class="tap-target inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-600 font-semibold py-3 px-6 rounded-xl hover:border-gray-300 transition-colors text-sm">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Job Data (In Shopify, this would come from Metaobjects or Blog)
+        const jobData = {
+            'customer-success': {
+                title: 'Customer Success Specialist',
+                department: 'Customer Support',
+                location: 'Dubai, UAE',
+                type: 'Full-time',
+                salary: 'AED 8-12K/month',
+                description: 'We\'re looking for a passionate Customer Success Specialist to join our Dubai team. You\'ll be the first point of contact for travelers planning their dream vacations across the UAE and Turkey.',
+                responsibilities: [
+                    'Respond to customer inquiries via WhatsApp, email, and phone within 5 minutes',
+                    'Guide customers through tour selection and booking process',
+                    'Handle booking modifications, cancellations, and refunds',
+                    'Coordinate with tour operators for smooth experiences',
+                    'Follow up with customers post-tour to collect reviews'
+                ],
+                requirements: [
+                    '1-3 years experience in customer service or travel',
+                    'Excellent English communication (Arabic/German a plus)',
+                    'Strong problem-solving skills',
+                    'Proficiency with CRM tools and WhatsApp Business',
+                    'Passion for travel and helping people'
+                ]
+            },
+            'marketing': {
+                title: 'Digital Marketing Manager',
+                department: 'Marketing',
+                location: 'Dubai, UAE',
+                type: 'Full-time',
+                salary: 'AED 15-20K/month',
+                description: 'Lead our digital marketing efforts across multiple channels. You\'ll develop and execute strategies to grow our brand presence and drive bookings.',
+                responsibilities: [
+                    'Develop and manage digital marketing campaigns (Google, Meta, TikTok)',
+                    'Oversee SEO/SEM strategy and implementation',
+                    'Manage social media content and community engagement',
+                    'Analyze campaign performance and optimize ROI',
+                    'Collaborate with content team for marketing materials'
+                ],
+                requirements: [
+                    '4+ years in digital marketing, preferably travel/tourism',
+                    'Proven track record with paid advertising platforms',
+                    'Strong analytical skills and data-driven mindset',
+                    'Experience with marketing automation tools',
+                    'Creative thinking and excellent communication'
+                ]
+            },
+            'operations': {
+                title: 'Tour Operations Coordinator',
+                department: 'Operations',
+                location: 'Antalya, Turkey',
+                type: 'Full-time',
+                salary: 'TRY 40-55K/month',
+                description: 'Coordinate daily tour operations in our Turkey office. You\'ll ensure smooth execution of tours and maintain relationships with local partners.',
+                responsibilities: [
+                    'Coordinate daily tour schedules with guides and drivers',
+                    'Manage relationships with local suppliers and partners',
+                    'Handle on-ground issues and emergency situations',
+                    'Maintain quality standards across all tours',
+                    'Report on operational metrics and improvements'
+                ],
+                requirements: [
+                    '2+ years in tour operations or hospitality',
+                    'Fluent in Turkish and English',
+                    'Strong organizational and multitasking skills',
+                    'Valid driver\'s license preferred',
+                    'Problem-solving under pressure'
+                ]
+            },
+            'developer': {
+                title: 'Frontend Developer',
+                department: 'Technology',
+                location: 'Remote',
+                type: 'Full-time',
+                salary: 'USD 3-5K/month',
+                description: 'Build and maintain our customer-facing web applications. You\'ll work on our booking platform, landing pages, and internal tools.',
+                responsibilities: [
+                    'Develop responsive web applications using React/Next.js',
+                    'Implement UI components following design specifications',
+                    'Optimize performance and ensure cross-browser compatibility',
+                    'Integrate with APIs and third-party services',
+                    'Collaborate with design and backend teams'
+                ],
+                requirements: [
+                    '3+ years frontend development experience',
+                    'Strong proficiency in React, TypeScript, and Tailwind CSS',
+                    'Experience with Shopify/Liquid is a plus',
+                    'Understanding of web performance optimization',
+                    'Self-motivated and excellent communication for remote work'
+                ]
+            }
+        };
+
+        function openJobModal(jobId) {
+            const job = jobData[jobId];
+            if (!job) return;
+
+            // Populate modal
+            document.getElementById('modalTitle').textContent = job.title;
+            document.getElementById('modalDepartment').textContent = job.department;
+            document.getElementById('modalLocation').querySelector('span').textContent = job.location;
+            document.getElementById('modalType').querySelector('span').textContent = job.type;
+            document.getElementById('modalSalary').querySelector('span').textContent = job.salary;
+            document.getElementById('modalDescription').textContent = job.description;
+
+            // Responsibilities
+            const respList = document.getElementById('modalResponsibilities');
+            respList.innerHTML = job.responsibilities.map(r =>
+                `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 shrink-0"></i>${r}</li>`
+            ).join('');
+
+            // Requirements
+            const reqList = document.getElementById('modalRequirements');
+            reqList.innerHTML = job.requirements.map(r =>
+                `<li class="flex items-start gap-2"><i class="fa-solid fa-star text-brand text-xs mt-1 shrink-0"></i>${r}</li>`
+            ).join('');
+
+            // Update apply email
+            document.getElementById('modalApplyEmail').href = `mailto:careers@tripventura.com?subject=Application: ${job.title}`;
+
+            // Show modal
+            document.getElementById('jobModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            document.getElementById('jobModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

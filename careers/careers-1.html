@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Tripventura's dynamic team. Explore exciting career opportunities in travel and tourism across Dubai and Turkey.">
+    <title>Careers | Tripventura - Join Our Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .tap-target { min-height: 44px; min-width: 44px; }
+        html { scroll-behavior: smooth; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .job-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-600 bg-white">
+
+    <!-- ========================================================================
+         VARIANT 1: CLEAN & PROFESSIONAL - Card-based Layout
+         Mobile-first approach with clean typography
+         ======================================================================== -->
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[70vh] flex items-center">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-cover bg-center"
+             style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4 sm:px-6 relative z-10 py-16 sm:py-20">
+            <div class="max-w-3xl">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-white text-xs sm:text-sm font-medium">We're Hiring</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                    Build Your Career<br>
+                    <span class="text-brand">With Tripventura</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 leading-relaxed max-w-xl">
+                    Join a passionate team shaping unforgettable travel experiences across Dubai and Turkey.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <a href="#open-positions" class="tap-target inline-flex items-center justify-center gap-2 bg-brand text-white font-semibold py-3 px-6 rounded-full hover:bg-brand-dark transition-all text-sm sm:text-base">
+                        <span>View Open Positions</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#why-join" class="tap-target inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur border border-white/30 text-white font-semibold py-3 px-6 rounded-full hover:bg-white/20 transition-all text-sm sm:text-base">
+                        Why Join Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="bg-brand-darktext py-6 sm:py-8">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">50+</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Team Members</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">2</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Global Offices</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">15+</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Nationalities</span>
+                </div>
+                <div>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">7</span>
+                    <span class="text-xs sm:text-sm text-gray-400">Years Growing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section id="why-join" class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-12 reveal">
+                <span class="text-brand font-semibold text-xs sm:text-sm uppercase tracking-wider">Why Join Us</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Benefits & Perks</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 reveal">
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-plane text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Travel Discounts</h3>
+                    <p class="text-gray-500 text-sm">Exclusive discounts on tours and travel packages for you and your family.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-laptop-house text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Flexible Work</h3>
+                    <p class="text-gray-500 text-sm">Hybrid work options with flexible hours to maintain work-life balance.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-graduation-cap text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Learning & Growth</h3>
+                    <p class="text-gray-500 text-sm">Continuous learning opportunities and career development programs.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-heart-pulse text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Health Insurance</h3>
+                    <p class="text-gray-500 text-sm">Comprehensive health coverage for you and your dependents.</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-users text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Great Team</h3>
+                    <p class="text-gray-500 text-sm">Work with passionate, multicultural team from around the world.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="bg-gray-50 rounded-2xl p-5 sm:p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-trophy text-brand text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-brand-darktext text-lg mb-2">Performance Bonus</h3>
+                    <p class="text-gray-500 text-sm">Competitive salary with performance-based bonuses and incentives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section id="open-positions" class="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10 sm:mb-12 reveal">
+                <span class="text-brand font-semibold text-xs sm:text-sm uppercase tracking-wider">Opportunities</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-darktext mt-2">Open Positions</h2>
+                <p class="text-gray-500 mt-3 max-w-lg mx-auto text-sm sm:text-base">Find your perfect role and start your journey with us.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4 reveal">
+                <!-- Job 1 -->
+                <a href="#" class="job-card block bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-brand-light rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-headset text-brand text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Customer Success Specialist</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Dubai, UAE
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> Immediate
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">Apply</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Job 2 -->
+                <a href="#" class="job-card block bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-chart-line text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Digital Marketing Manager</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Dubai, UAE
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> 2 weeks
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">Apply</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Job 3 -->
+                <a href="#" class="job-card block bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-map text-green-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Tour Operations Coordinator</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Antalya, Turkey
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> Immediate
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">Apply</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Job 4 -->
+                <a href="#" class="job-card block bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-lg transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-code text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-brand-darktext text-base sm:text-lg">Frontend Developer</h3>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-location-dot"></i> Remote
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-briefcase"></i> Full-time
+                                </span>
+                                <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                    <i class="fa-solid fa-clock"></i> 1 month
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand font-semibold text-sm">
+                            <span class="hidden sm:inline">Apply</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application CTA -->
+    <section class="py-12 sm:py-16 md:py-20 bg-brand-darktext">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="max-w-2xl mx-auto text-center reveal">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">Don't See Your Role?</h2>
+                <p class="text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">We're always looking for talented people. Send us your CV and we'll keep you in mind for future opportunities.</p>
+                <a href="mailto:careers@tripventura.com" class="tap-target inline-flex items-center justify-center gap-2 bg-brand text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full hover:bg-brand-dark transition-all text-sm sm:text-base">
+                    <i class="fa-solid fa-envelope"></i>
+                    Send Your CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-gray-400 text-sm">
+                    &copy; 2024 Tripventura. All rights reserved.
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
