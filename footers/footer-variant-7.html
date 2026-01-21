@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 7 - Compact Immersive + Sub | Tripventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 4: Compact Immersive + Subscription -->
+    <!-- Structure: V13 Body (Refined Grid) + V18 Header (Subscription) -->
+    <footer class="relative text-white overflow-hidden border-t-4 border-brand">
+        
+        <!-- Background Image & Overlay -->
+        <div class="absolute inset-0 z-0">
+             <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Travel Background" class="w-full h-full object-cover">
+             <!-- Dark Overlay -->
+             <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/70 mix-blend-multiply"></div>
+             <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Top Section: Subscription (From V18, styles matched) -->
+        <div class="relative z-10 border-b border-white/10 bg-black/20 backdrop-blur-sm">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-2xl font-bold mb-2">Join our travel community</h2>
+                        <p class="text-gray-300 text-sm">Get exclusive offers and travel inspiration sent to your inbox.</p>
+                    </div>
+                    <div class="w-full max-w-md">
+                        <form class="flex gap-2">
+                            <input type="email" placeholder="Enter your email" class="w-full bg-white/10 backdrop-blur-sm border border-white/20 text-white px-5 py-3 rounded-full focus:outline-none focus:border-brand transition-colors text-sm placeholder-gray-400">
+                            <button class="bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-full font-bold transition-all duration-300 hover:shadow-lg hover:shadow-brand/20 whitespace-nowrap">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 py-10 relative z-10">
+            
+            <!-- Grid Container: Balanced 2x2 Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 mb-6">
+                
+                <!-- 1. Brand & Mission (Span 2) -->
+                <div class="md:col-span-2 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 flex flex-col justify-between h-auto hover:bg-white/15 transition-colors">
+                    <div class="text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                            <span class="text-2xl font-extrabold italic tracking-tight text-white">trip <span class="bg-brand text-white px-1 not-italic">ventura</span></span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3 leading-tight text-white">
+                            We make travelling <span class="text-brand">unforgettable</span>.
+                        </h3>
+                        <p class="text-gray-300 mb-6 max-w-lg mx-auto md:mx-0 leading-relaxed text-sm font-light">
+                            Our tours are personalized, unique, and expertly crafted to showcase the best of your destination.
+                        </p>
+                    </div>
+                    <div class="flex gap-3 justify-center md:justify-start">
+                        <a href="https://wa.me/971585971234" class="px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-full hover:bg-brand-dark transition-colors shadow-lg shadow-brand/20 flex items-center gap-2">
+                             <i class="fa-brands fa-whatsapp"></i> Chat Live
+                        </a>
+                        <a href="#" class="px-5 py-2.5 bg-white/10 text-white text-sm font-semibold rounded-full hover:bg-white/20 transition-colors border border-white/10">About Us</a>
+                    </div>
+                </div>
+
+                <!-- 2. Navigation & Socials (Span 2) -->
+                <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-xl flex flex-col justify-between gap-6 text-center md:text-left">
+                    
+                    <!-- Top Part: Links -->
+                    <div class="flex flex-col md:flex-row gap-6 pb-4 border-b border-gray-100">
+                        <div class="flex-1 grid grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 text-xs uppercase tracking-wide">Navigation</h4>
+                                <ul class="space-y-1.5 text-xs text-gray-500 font-medium">
+                                    <li><a href="#" class="hover:text-brand transition-colors">Tours</a></li>
+                                    <li><a href="#" class="hover:text-brand transition-colors">Destinations</a></li>
+                                    <li><a href="#" class="hover:text-brand transition-colors">Travel Blog</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 text-xs uppercase tracking-wide">Company</h4>
+                                <ul class="space-y-1.5 text-xs text-gray-500 font-medium">
+                                    <li><a href="#" class="hover:text-brand transition-colors">About us</a></li>
+                                    <li><a href="#" class="hover:text-brand transition-colors">Careers</a></li>
+                                    <li><a href="#" class="hover:text-brand transition-colors">Affiliate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Socials -->
+                        <div class="flex gap-2 items-start justify-center md:justify-start">
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand hover:text-white transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand hover:text-white transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand hover:text-white transition-all"><i class="fa-brands fa-youtube text-sm"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand hover:text-white transition-all"><i class="fa-brands fa-tiktok text-sm"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Part: Improved Copyright & Payments -->
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div class="text-[10px] text-gray-400 font-medium">
+                             &copy; 2024 Tripventura. Powered by Passion.
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-8 hover:scale-105 transition-transform">
+                            <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Mastercard" class="h-8 hover:scale-105 transition-transform">
+                            <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="PayPal" class="h-8 hover:scale-105 transition-transform">
+                            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs font-bold text-gray-700 shadow-sm">GPay</span>
+                             <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs font-bold text-gray-700 shadow-sm">Pay</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Main Destinations (Span 2) -->
+                <div class="md:col-span-2 bg-black/40 backdrop-blur-md text-white rounded-2xl p-6 border border-white/5 flex flex-col justify-between hover:bg-black/50 transition-colors">
+                    <div class="text-center md:text-left h-full flex flex-col">
+                        <h4 class="text-base font-bold mb-4 flex items-center justify-center md:justify-start gap-2">
+                            <i class="fa-solid fa-map-location-dot text-brand-secondary"></i> Popular Destinations
+                        </h4>
+                        <!-- Expanded to 2 columns for better use of width -->
+                        <ul class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-gray-300 font-medium">
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Dubai</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Istanbul</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Abu Dhabi</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Belek</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Antalya</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Bodrum</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Alanya</a></li>
+                            <li><a href="#" class="hover:text-white hover:pl-1 transition-all">Aswan</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Contact Stats (Span 2) -->
+                <div class="md:col-span-2 bg-brand text-white rounded-2xl p-6 shadow-xl shadow-brand/20 flex flex-col md:flex-row items-center justify-between relative overflow-hidden group border border-white/10 gap-6">
+                    <div class="absolute -right-6 -bottom-6 text-9xl text-white opacity-10 rotate-12 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    
+                    <div class="relative z-10 text-center md:text-left flex-1">
+                        <h4 class="text-xl font-bold mb-2">Need Support?</h4>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div>
+                                <p class="text-white/80 text-[10px] uppercase font-bold tracking-wider mb-0.5">Call Us 24/7</p>
+                                <a href="tel:+971585971234" class="block text-xl font-bold hover:underline">+971 58 597 1234</a>
+                            </div>
+                            <div>
+                                <p class="text-white/80 text-[10px] uppercase font-bold tracking-wider mb-0.5">Email</p>
+                                <a href="mailto:info@tripventura.com" class="block text-sm font-medium hover:underline">info@tripventura.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative z-10 flex-shrink-0">
+                         <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-green-400 flex items-center justify-center pulse shadow-[0_0_10px_rgba(74,222,128,0.5)]"></div>
+                            <span class="text-sm font-bold">Agents Online</span>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

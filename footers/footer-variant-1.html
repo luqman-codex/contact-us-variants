@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 1 - Hybrid Standard | Tripventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 1: Hybrid Standard -->
+    <!-- Structure: V17 Body + V18 Header (Light Theme Adaptation) -->
+    <footer class="bg-white border-t-4 border-brand">
+        
+        <!-- Top Section: Newsletter (V18 Style Adapted for Light Theme) -->
+        <div class="border-b border-gray-100 bg-gray-50/50">
+            <div class="container mx-auto px-6 py-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-2xl font-bold mb-2 text-gray-900">Join our travel community</h2>
+                        <p class="text-gray-500 text-sm">Get exclusive offers and travel inspiration sent to your inbox.</p>
+                    </div>
+                    <div class="w-full max-w-md">
+                        <form class="flex gap-2">
+                            <input type="email" placeholder="Enter your email" class="w-full bg-white border border-gray-200 text-gray-900 px-5 py-3 rounded-full focus:outline-none focus:border-brand transition-colors text-sm placeholder-gray-400 shadow-sm">
+                            <button class="bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-full font-bold transition-all duration-300 hover:shadow-lg hover:shadow-brand/20 whitespace-nowrap">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Links Section (From V17) -->
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-center md:text-left">
+                
+                <!-- Brand Info (Span 2) -->
+                <div class="lg:col-span-2 space-y-6 lg:pr-8">
+                    <a href="#" class="inline-block">
+                        <span class="text-3xl font-extrabold text-brand-darktext tracking-tight">Trip<span class="text-brand">ventura</span></span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Curating premium travel experiences with love and expertise. From the deserts of Dubai to the coasts of Turkey, we make your journey unforgettable.
+                    </p>
+                    
+                    <div class="pt-4">
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Follow Us</p>
+                        <div class="flex gap-3 justify-center md:justify-start">
+                            <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-brand hover:border-brand hover:text-white transition-all">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-brand hover:border-brand hover:text-white transition-all">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-brand hover:border-brand hover:text-white transition-all">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 1 -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 text-lg">Destinations</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Dubai Packages</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Turkey Tours</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Antalya Resorts</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Cappadocia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 text-lg">Company</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">About Us</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Our Team</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Careers</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Blog</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-brand transition-colors text-sm hover:translate-x-1 inline-block transition-transform">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 (Contact) -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 text-lg">Contact</h4>
+                    <ul class="space-y-4 flex flex-col items-center md:items-start">
+                        <li class="flex items-start gap-3 text-left md:text-left">
+                            <i class="fa-solid fa-location-dot text-brand mt-1 text-sm"></i>
+                            <span class="text-gray-500 text-sm">BC-204, Al Barsha, Dubai, UAE</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand text-sm"></i>
+                            <a href="tel:+971585971234" class="text-gray-900 font-bold text-sm hover:text-brand">+971 58 597 1234</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-regular fa-envelope text-brand text-sm"></i>
+                            <a href="mailto:info@tripventura.com" class="text-gray-500 text-sm hover:text-brand">info@tripventura.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar & Payments (Updated V17 Layout) -->
+        <div class="border-t border-gray-100 bg-gray-50">
+            <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <!-- 1. Copyright (Left) -->
+                <p class="text-xs text-gray-500 text-center md:text-left order-3 md:order-1">
+                    &copy; 2024 Tripventura. All rights reserved.
+                </p>
+
+                <!-- 2. Legal Links (Center) -->
+                <div class="flex gap-4 md:gap-6 order-2">
+                    <a href="#" class="text-xs text-gray-500 hover:text-brand transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-xs text-gray-500 hover:text-brand transition-colors">Terms of Service</a>
+                    <a href="#" class="text-xs text-gray-500 hover:text-brand transition-colors">Cookie Policy</a>
+                </div>
+
+                <!-- 3. Payment Methods (Right) -->
+                <div class="flex items-center gap-3 order-1 md:order-3">
+                    <div class="flex items-center gap-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-8 hover:scale-105 transition-transform">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Mastercard" class="h-8 hover:scale-105 transition-transform">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="PayPal" class="h-8 hover:scale-105 transition-transform">
+                    </div>
+                    <div class="h-6 w-px bg-gray-300 mx-2"></div>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs font-bold text-gray-600 shadow-sm">GPay</span>
+                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs font-bold text-gray-600 shadow-sm">Pay</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
