@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 9 - Startup Tech | Tripventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#FFF0ED',
+                            secondary: '#FFB703',
+                            darktext: '#1F2937'
+                        }
+                    },
+                    fontFamily: { 
+                        sans: ['Poppins', 'sans-serif'],
+                        mono: ['Inter', 'sans-serif'] 
+                    },
+                    backgroundImage: {
+                        'noise': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48ZmlsdGVyIGlkPSJ4Ij48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCN4KSIgb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 9: The Startup Tech (No App, Real Content) -->
+    <!-- Concept: V8 Aesthetic but with actionable Startup content (Destinations instead of App). -->
+    <footer class="relative text-white overflow-hidden border-t border-white/5">
+        
+        <!-- Background: Dark Tech + Travel Image (Same as V8 for consistency) -->
+        <div class="absolute inset-0 z-0 select-none pointer-events-none">
+             <!-- Image -->
+             <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80" alt="Travel Tech" class="w-full h-full object-cover opacity-40 grayscale-[20%]">
+             
+             <!-- Noise Texture Overlay -->
+             <div class="absolute inset-0 bg-noise opacity-30 mix-blend-overlay"></div>
+             
+             <!-- Gradient Overlays for Depth -->
+             <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/90 to-gray-900/60 mix-blend-multiply"></div>
+             <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-black/80"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative z-10 container mx-auto px-6 py-12 lg:py-16">
+            
+            <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+                
+                <!-- 1. BRAND & MISSION (Span 4) -->
+                <!-- Removed "System Status" indicators, kept clean startup pitch -->
+                <div class="glass-card rounded-3xl p-8 md:col-span-6 lg:col-span-4 flex flex-col justify-between group h-full">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-3xl font-bold tracking-tighter text-white">trip<span class="text-brand">ventura</span></span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                            We are a modern travel agency combining human expertise with smart technology to craft unforgettable journeys.
+                        </p>
+                    </div>
+
+                    <!-- Socials & Trust -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2 text-xs font-mono text-gray-500">
+                             <!-- Replaced System Status with Trust Signals suitable for startup -->
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check-circle text-brand"></i> Licensed</span>
+                            <span class="text-gray-700">|</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-blue-500"></i> Secure Booking</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all duration-300"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. POPULAR DESTINATIONS (Span 4) -->
+                <!-- Replaces the "App Ecosystem" card. Uses visual density to look "techy" but contains standard links. -->
+                <div class="glass-card rounded-3xl p-8 md:col-span-6 lg:col-span-4 relative overflow-hidden group flex flex-col">
+                    <div class="mb-4">
+                        <span class="text-brand text-xs font-bold uppercase tracking-widest mb-1 block">Explore</span>
+                        <h3 class="text-xl font-bold">Trending Now</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-3 flex-1 content-start">
+                        <a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all group/item">
+                            <div class="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-xs">🇦🇪</div>
+                            <span class="text-sm font-medium text-gray-300 group-hover/item:text-white">Dubai</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all group/item">
+                            <div class="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-xs">🇹🇷</div>
+                            <span class="text-sm font-medium text-gray-300 group-hover/item:text-white">Istanbul</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all group/item">
+                            <div class="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-xs">🇹🇷</div>
+                            <span class="text-sm font-medium text-gray-300 group-hover/item:text-white">Antalya</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all group/item">
+                            <div class="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center text-xs">🇪🇬</div>
+                            <span class="text-sm font-medium text-gray-300 group-hover/item:text-white">Aswan</span>
+                        </a>
+                        <a href="#" class="col-span-2 text-center py-2 text-xs font-bold text-brand uppercase tracking-wider hover:text-white transition-colors cursor-pointer mt-auto">
+                            View All Destinations <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. SERVICES (Span 2) -->
+                <div class="md:col-span-3 lg:col-span-2 space-y-8 p-4">
+                    <div>
+                        <h4 class="font-bold text-white mb-4 text-sm font-mono uppercase tracking-wide text-brand/80">Services</h4>
+                        <ul class="space-y-2 text-sm text-gray-400 font-light">
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Flight Booking</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Hotel Stays</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Holiday Packages</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Corporate Travel</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-4 text-sm font-mono uppercase tracking-wide text-brand/80">Company</h4>
+                        <ul class="space-y-2 text-sm text-gray-400 font-light">
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Our Story</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Why Tripventura?</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. SUPPORT CARD (Span 2) -->
+                <div class="glass-card rounded-3xl p-6 md:col-span-3 lg:col-span-2 flex flex-col justify-center items-center text-center">
+                    <div class="mb-4 relative">
+                        <!-- Animated Circle -->
+                        <div class="w-16 h-16 rounded-full border-2 border-brand/30 flex items-center justify-center relative">
+                            <!-- Removed spinner for startup version, kept simple icon -->
+                            <i class="fa-solid fa-headset text-2xl text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-white text-sm mb-1">Need Help?</h4>
+                    <p class="text-xs text-gray-500 mb-4 px-2 tracking-wide">Talk to a travel expert.</p>
+                    <a href="tel:+971585971234" class="text-lg font-bold text-white hover:text-brand transition-colors mb-1 block">
+                        +971 58 597 1234
+                    </a>
+                    <a href="mailto:info@tripventura.com" class="text-xs text-gray-400 hover:text-white transition-colors">
+                        info@tripventura.com
+                    </a>
+                </div>
+
+                <!-- 5. NEWSLETTER / BOTTOM BAR (Span 12) -->
+                <div class="md:col-span-6 lg:col-span-12 glass-card rounded-3xl p-4 md:p-6 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/5 mt-4">
+                    
+                    <!-- Input -->
+                    <div class="w-full md:max-w-md">
+                        <form class="relative group">
+                            <i class="fa-regular fa-paper-plane absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-brand transition-colors"></i>
+                            <!-- Changed placeholder text -->
+                            <input type="email" placeholder="Get travel offers in your inbox..." class="w-full bg-black/20 border border-white/10 rounded-full py-2.5 pl-11 pr-32 text-sm text-white focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand/50 transition-all placeholder-gray-500">
+                            <!-- Changed button text from "Join Beta" to standard "Subscribe" -->
+                            <button class="absolute right-1 top-1 bottom-1 bg-brand text-white px-5 rounded-full text-xs font-bold hover:bg-brand-dark transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Small Links & Payments -->
+                    <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-[10px] text-gray-500 font-mono">
+                        <span>© 2024 Tripventura.</span>
+                        <div class="flex gap-4">
+                             <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                             <a href="#" class="hover:text-white transition-colors">Terms</a>
+                        </div>
+                        <div class="flex gap-2 opacity-70 grayscale hover:grayscale-0 transition-all">
+                             <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-4">
+                             <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Mastercard" class="h-4">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

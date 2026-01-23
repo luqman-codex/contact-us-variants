@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 13 - Optimized Premium | Tripventura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Mobile Accordion Styles */
+        .accordion-content {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-content.active {
+            opacity: 1;
+            padding-top: 1rem;
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                            light: '#fff1f2'
+                        },
+                        gray: {
+                            50: '#F9FAFB',
+                            100: '#F3F4F6',
+                            200: '#E5E7EB',
+                            300: '#D1D5DB',
+                            400: '#9CA3AF',
+                            500: '#6B7280',
+                            600: '#4B5563',
+                            800: '#1F2937',
+                            900: '#111827',
+                        }
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 13 - RECOMMENDED OPTIMIZATIONS -->
+    <!-- 1. Background: Subtle gray (#F9FAFB) to separate footer from content area. -->
+    <!-- 2. Typography: Uppercase, tracking-widest headers for premium feel. -->
+    <!-- 3. Conversion: Added "Unlock Deals" Newsletter in Column 4. -->
+    <!-- 4. Mobile: Finger-friendly heights (min-h-[48px]). -->
+    
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12 text-gray-600 font-light">
+        <div class="container mx-auto px-6 lg:px-12">
+            
+            <!-- Top Row: Logo & Mission -->
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
+                <div class="max-w-md">
+                    <a href="#" class="inline-block group mb-6">
+                        <span class="text-2xl font-extrabold italic tracking-tight text-gray-900">trip <span class="bg-brand text-white px-1 not-italic">ventura</span></span>
+                    </a>
+                    <p class="text-base text-gray-500 leading-relaxed">
+                        We make travelling unforgettable. Our tours are personalized, unique, and expertly crafted to showcase the best of your destination.
+                    </p>
+                </div>
+                
+                <!-- Trust Indicators (New Addition for Trust) -->
+                <div class="flex gap-8 hidden lg:flex">
+                     <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand">
+                            <i class="fa-solid fa-shield-cat"></i>
+                        </div>
+                        <div class="text-sm">
+                            <div class="font-bold text-gray-900">100% Secure</div>
+                            <div class="text-xs">Checkout</div>
+                        </div>
+                     </div>
+                     <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="text-sm">
+                            <div class="font-bold text-gray-900">24/7 Support</div>
+                            <div class="text-xs">Real humans</div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <!-- Main Grid / Mobile Accordions -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-12 border-t border-gray-200 lg:border-none pt-8 lg:pt-0 mb-16">
+                
+                <!-- COL 1: Navigation -->
+                <div class="border-b border-gray-200 lg:border-none last:border-0">
+                    <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('nav-content', this)" aria-expanded="false">
+                        <!-- Typography Upgrade: Uppercase, spacing, bold -->
+                        <h4 class="font-bold text-xs uppercase tracking-[0.15em] text-gray-400 group-hover:text-brand lg:group-hover:text-gray-400 transition-colors">Navigation</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="nav-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
+                        <ul class="space-y-3 pb-6 lg:pb-0 text-sm font-medium">
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Tours</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Destinations</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Travel Blog</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Deals</a> <span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold ml-1">HOT</span></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COL 2: Company -->
+                <div class="border-b border-gray-200 lg:border-none last:border-0">
+                     <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('company-content', this)" aria-expanded="false">
+                        <h4 class="font-bold text-xs uppercase tracking-[0.15em] text-gray-400 group-hover:text-brand lg:group-hover:text-gray-400 transition-colors">Company</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="company-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
+                        <ul class="space-y-3 pb-6 lg:pb-0 text-sm font-medium">
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">About us</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Contact</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Careers</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Affiliate Partner</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COL 3: Destinations -->
+                <div class="border-b border-gray-200 lg:border-none last:border-0">
+                     <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('dest-content', this)" aria-expanded="false">
+                        <h4 class="font-bold text-xs uppercase tracking-[0.15em] text-gray-400 group-hover:text-brand lg:group-hover:text-gray-400 transition-colors">Top Destinations</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="dest-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
+                        <ul class="space-y-3 pb-6 lg:pb-0 text-sm font-medium">
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Dubai</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Alanya</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Abu Dhabi</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Antalya</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Istanbul</a></li>
+                            <li><a href="#" class="hover:text-brand hover:translate-x-1 transition-all inline-block">Bodrum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- COL 4: Newsletter (The "Crucial" Addition) -->
+                <!-- Converted empty column into high-value lead capture CARD -->
+                <div class="py-8 lg:py-0">
+                    <div class="bg-white p-6 xl:p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-xs uppercase tracking-[0.15em] text-brand mb-4">Unlock Exclusive Deals</h4>
+                        <p class="text-sm text-gray-500 mb-6">Join 47M+ travelers. Get up to 50% off your first trip.</p>
+                        
+                        <form class="flex flex-col gap-3">
+                            <div class="relative">
+                                <i class="fa-regular fa-envelope absolute left-4 top-3.5 text-gray-400"></i>
+                                <input type="email" placeholder="Your email address" class="w-full bg-gray-50 border border-gray-200 rounded-lg pl-11 pr-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand/20 transition-all">
+                            </div>
+                            <button class="bg-brand text-white font-bold text-sm py-3 rounded-lg hover:bg-brand-dark transition-all shadow-md shadow-brand/20 hover:shadow-lg hover:-translate-y-0.5 transform">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div class="mt-8 flex gap-3"> <!-- Increased margin from 6 to 8 -->
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-brand hover:text-white hover:border-brand transition-all"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        
+                        <!-- Added Contact below Newsletter -->
+                        <div class="mt-8 pt-6 border-t border-gray-100">
+                            <h4 class="font-bold text-xs uppercase tracking-[0.15em] text-gray-400 mb-4">Contact Us</h4>
+                            <ul class="space-y-3 text-sm font-medium">
+                                <li>
+                                    <a href="mailto:info@tripventura.com" class="flex items-center gap-3 text-gray-600 hover:text-brand transition-colors">
+                                        <i class="fa-regular fa-envelope text-brand"></i> info@tripventura.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+971585971234" class="flex items-center gap-3 text-gray-600 hover:text-brand transition-colors">
+                                        <i class="fa-solid fa-phone text-brand"></i> +971 58 597 1234
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="text-xs text-gray-400 text-center md:text-left order-2 md:order-1">
+                    <p>&copy; 2026 Tripventura Inc. All rights reserved.</p> 
+                    <div class="mt-2 flex gap-4 justify-center md:justify-start">
+                        <a href="#" class="hover:text-brand underline decoration-gray-300 underline-offset-2">Privacy</a>
+                        <a href="#" class="hover:text-brand underline decoration-gray-300 underline-offset-2">Terms</a>
+                        <a href="#" class="hover:text-brand underline decoration-gray-300 underline-offset-2">Sitemap</a>
+                    </div>
+                </div>
+
+                <!-- Payment Methods (Right aligned now for balance) -->
+                <div class="flex items-center gap-2 order-1 md:order-2">
+                    <span class="text-[10px] uppercase font-bold text-gray-400 mr-2 hidden sm:inline">Secured by</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-6 bg-white p-0.5 rounded border border-gray-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Mastercard" class="h-6 bg-white p-0.5 rounded border border-gray-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="Amex" class="h-6 bg-white p-0.5 rounded border border-gray-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968252.png" alt="ApplePay" class="h-6 bg-white p-0.5 rounded border border-gray-100">
+                </div>
+
+            </div>
+        </div>
+        
+
+
+    </footer>
+
+    <script>
+        function toggleAccordion(contentId, btn) {
+            const content = document.getElementById(contentId);
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            
+            // UI Polish: Rotate icon 180deg instead of 45deg for cleaner +/- switch
+            if (isExpanded) {
+                content.style.maxHeight = '0px';
+                content.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.querySelector('.accordion-icon').classList.remove('fa-minus');
+                btn.querySelector('.accordion-icon').classList.add('fa-plus');
+                btn.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+                // Typography revert
+                btn.querySelector('h4').classList.remove('text-brand');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+                btn.querySelector('.accordion-icon').classList.remove('fa-plus');
+                btn.querySelector('.accordion-icon').classList.add('fa-minus');
+                btn.querySelector('.accordion-icon').style.transform = 'rotate(180deg)';
+                // Typography highlight
+                btn.querySelector('h4').classList.add('text-brand');
+            }
+        }
+    </script>
+</body>
+</html>

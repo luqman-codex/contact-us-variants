@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 11 - GetYourGuide Inspired</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1a2b49',
+                            900: '#0e1d35',
+                        },
+                        brand: '#ff5533' // GetYourGuide orange-ish Red
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f0f0;
+        }
+        /* Hide scrollbar for select but keep functionality */
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.7rem top 50%;
+            background-size: 0.65rem auto;
+            padding-right: 2rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 11 START -->
+    <!-- 'navy-900' allows strictly following the GYG deep blue style -->
+    <footer class="bg-navy-900 text-white border-t-4 border-brand">
+        
+        <!-- 1. Top Control Bar -->
+        <div class="border-b border-white/10 bg-navy-800">
+            <div class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+                
+                <!-- Currency/Language Selectors -->
+                <div class="flex gap-4 w-full sm:w-auto">
+                    <div class="relative w-full sm:w-48">
+                        <select class="w-full bg-transparent border border-white/30 rounded py-2 px-3 text-sm font-semibold focus:outline-none focus:border-brand cursor-pointer hover:border-white transition-colors">
+                            <option class="text-black">English (United States)</option>
+                            <option class="text-black">Deutsch (Deutschland)</option>
+                            <option class="text-black">Français (France)</option>
+                        </select>
+                    </div>
+                    <div class="relative w-full sm:w-32">
+                        <select class="w-full bg-transparent border border-white/30 rounded py-2 px-3 text-sm font-semibold focus:outline-none focus:border-brand cursor-pointer hover:border-white transition-colors">
+                            <option class="text-black">$ USD</option>
+                            <option class="text-black">€ EUR</option>
+                            <option class="text-black">£ GBP</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Tagline or secondary info -->
+                <div class="hidden md:block text-sm font-semibold text-gray-400">
+                   The world awaits.
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Main Grid -->
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: Mobile First -->
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h4 class="font-bold text-base mb-1">Mobile</h4>
+                        <p class="text-sm text-gray-400">Book your trip on the go.</p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                         <button class="bg-navy-800 border border-white/20 text-white px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-navy-800 hover:border-brand transition-all w-full max-w-[200px]">
+                            <i class="fa-brands fa-apple text-2xl"></i>
+                            <div class="flex flex-col items-start leading-none">
+                                <span class="text-[10px] uppercase text-gray-400">Download on the</span>
+                                <span class="text-sm font-bold">App Store</span>
+                            </div>
+                        </button>
+                        <button class="bg-navy-800 border border-white/20 text-white px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-navy-800 hover:border-brand transition-all w-full max-w-[200px]">
+                            <i class="fa-brands fa-google-play text-xl"></i>
+                            <div class="flex flex-col items-start leading-none">
+                                <span class="text-[10px] uppercase text-gray-400">Get it on</span>
+                                <span class="text-sm font-bold">Google Play</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Col 2: Support -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-bold text-base mb-2">Support</h4>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Contact</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Legal Notice</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Privacy Policy</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Terms & Conditions</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Sitemap</a>
+                </div>
+
+                <!-- Col 3: Company -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-bold text-base mb-2">Company</h4>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">About Us</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Careers</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Press</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Magazine</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Travel Guides</a>
+                </div>
+
+                <!-- Col 4: Work With Us -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-bold text-base mb-2">Work With Us</h4>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Supplier Administration</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Become a Supplier</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Become an Affiliate</a>
+                    <a href="#" class="text-sm text-gray-300 hover:text-white hover:underline decoration-brand underline-offset-4 transition-all">Partner Assistance</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 3. Bottom Bar -->
+        <div class="bg-navy-800 border-t border-white/10">
+            <div class="container mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center gap-6">
+                
+                <!-- Socials (Right on Desktop, Bottom on Mobile) -->
+                 <div class="flex gap-4 order-2 lg:order-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand flex items-center justify-center transition-colors">
+                        <i class="fa-brands fa-pinterest text-white"></i>
+                    </a>
+                </div>
+
+                <!-- Copyright (Center on Desktop) -->
+                <div class="text-xs text-gray-400 order-3 lg:order-1 text-left">
+                    &copy; 2026 Tripventura Inc. All rights reserved. 
+                    <br class="hidden lg:block">
+                    Made in Zurich & Berlin.
+                </div>
+                
+                <!-- Payment (Left on Desktop, Middle on Mobile) -->
+                <div class="flex flex-col items-start lg:items-end gap-2 order-1 lg:order-2">
+                    <span class="text-xs font-semibold text-gray-400">Ways you can pay</span>
+                    <div class="flex items-center gap-2 bg-white rounded px-2 py-1">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="PayPal" class="h-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="MC" class="h-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-6">
+                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968252.png" alt="ApplePay" class="h-5">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- FOOTER VARIANT 11 END -->
+
+</body>
+</html>

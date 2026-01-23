@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Variant 12 - Clean Accordion | Tripventura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        /* Accordion transition styles */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-content.active {
+            opacity: 1;
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-btn[aria-expanded="true"] .accordion-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#e4010f',
+                            dark: '#c7000d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col justify-end">
+
+    <!-- FOOTER VARIANT 12 -->
+    <!-- Structure: Headout Style (Logo Top Left, Clean Columns) -->
+    <!-- Content: From Red Tripventura Image -->
+    <!-- Mobile: Accordions with + icon -->
+    
+    <footer class="bg-white border-t border-gray-100 pt-12 pb-8 text-gray-800">
+        <div class="container mx-auto px-6">
+            
+            <!-- Upgrade: Headout places Logo on its own row at the top left -->
+            <div class="mb-10 text-left">
+                <a href="#" class="inline-block">
+                    <span class="text-2xl font-extrabold italic tracking-tight text-gray-900">trip <span class="bg-brand text-white px-1 not-italic">ventura</span></span>
+                </a>
+                <!-- Tagline from Red Image -->
+                 <p class="mt-4 text-sm text-gray-500 max-w-sm leading-relaxed">
+                    We make travelling unforgettable. Our tours are personalized, unique, and expertly crafted to showcase the best of your destination.
+                </p>
+            </div>
+
+            <!-- Main Grid / Mobile Accordions -->
+            <!-- Desktop: Grid | Mobile: Flex Col with Accordions -->
+            <div class="flex flex-col lg:grid lg:grid-cols-4 gap-0 lg:gap-8 mb-12 border-b lg:border-b-0 border-gray-100 lg:mb-8">
+                
+                <!-- COL 1: Navigation -->
+                <div class="border-b border-gray-100 lg:border-none">
+                    <button class="accordion-btn w-full flex justify-between items-center py-4 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group" onclick="toggleAccordion('nav-content', this)" aria-expanded="false">
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-gray-900 lg:text-gray-400">Navigation</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="nav-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block">
+                        <ul class="space-y-3 pb-4 lg:pb-0 text-sm text-gray-600">
+                            <li><a href="#" class="hover:text-brand transition-colors">Tours</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Destinations</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Travel Blog</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Deals</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Help Center</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COL 2: Company -->
+                <div class="border-b border-gray-100 lg:border-none">
+                     <button class="accordion-btn w-full flex justify-between items-center py-4 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group" onclick="toggleAccordion('company-content', this)" aria-expanded="false">
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-gray-900 lg:text-gray-400">Company</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="company-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block">
+                        <ul class="space-y-3 pb-4 lg:pb-0 text-sm text-gray-600">
+                            <li><a href="#" class="hover:text-brand transition-colors">About us</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Contact</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Careers</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Affiliate</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COL 3: Main Destinations -->
+                <div class="border-b border-gray-100 lg:border-none">
+                     <button class="accordion-btn w-full flex justify-between items-center py-4 lg:py-0 lg:mb-4 lg:cursor-default lg:pointer-events-none group" onclick="toggleAccordion('dest-content', this)" aria-expanded="false">
+                        <h4 class="font-bold text-sm uppercase tracking-wide text-gray-900 lg:text-gray-400">Main Destinations</h4>
+                        <i class="fa-solid fa-plus text-gray-400 accordion-icon lg:hidden"></i>
+                    </button>
+                    <div id="dest-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block">
+                        <ul class="space-y-3 pb-4 lg:pb-0 text-sm text-gray-600">
+                            <li><a href="#" class="hover:text-brand transition-colors">Dubai</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Alanya</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Abu Dhabi</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Antalya</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Istanbul</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Belek</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Bodrum</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Aswan</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COL 4: Socials & Contact (Using Headout's 'Partners' slot style for Visual/Empty Balance or placing Red Image socials here?) -->
+                <!-- Red Image has socials centered below. Headout has them Bottom Right. -->
+                <!-- User said: "make sure the content is take from [Red Image] just to show". Red image has "We Accept" and "Socials" at the bottom. -->
+                <!-- However, to fill the grid like Headout, let's keep the structure but maybe leave the 4th column for contact/socials if desktop, or stick to bottom bar like Headout? -->
+                 <!-- Headout Image 0 shows "Partners" in 4th col. Red Image doesn't have a 4th list. -->
+                 <!-- I will move the "We Accept" / Payment icons here or keep typical Headout layout which pushes them to bottom row. -->
+                 <!-- Let's assume standard Headout Layout: Bottom Row handles Socials/Payments. 4th Column can be empty or used for "Contact Info" derived from standard Tripventura data. -->
+                 
+                 <div class="border-b border-gray-100 lg:border-none hidden lg:block">
+                    <!-- Placeholder to match grid layout or extra links if needed. Leaving clean as per Red Image content which only has 3 lists. -->
+                    <!-- We can put the "Contact" details here. -->
+                    <h4 class="font-bold text-sm uppercase tracking-wide text-gray-400 mb-4">Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-brand transition-colors"><i class="fa-solid fa-envelope mr-2"></i> info@tripventura.com</a></li>
+                        <li><a href="#" class="hover:text-brand transition-colors"><i class="fa-solid fa-phone mr-2"></i> +971 58 597 1234</a></li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- 1. Copyright (Left on Headout) -->
+                 <p class="text-xs text-gray-400 text-left order-3 md:order-1 w-full md:w-auto mt-4 md:mt-0">
+                    &copy; 2026 Tripventura. All rights reserved.
+                </p>
+
+                <!-- 2. Payment Methods (Center/Right on Headout?) -->
+                <!-- Headout has "We Accept" on right, above socials? Or inline. -->
+                <!-- Red Image has them centered. Let's follow Headout "everything I want same" -> Headout usually puts payments/socials on right. -->
+                <div class="flex items-center gap-2 order-2 md:order-2 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="Mastercard" class="h-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="Amex" class="h-5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968252.png" alt="ApplePay" class="h-5">
+                </div>
+
+                <!-- 3. Socials (Right on Headout) -->
+                <div class="flex gap-4 order-1 md:order-3">
+                     <a href="#" class="text-gray-400 hover:text-brand transition-colors"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                     <a href="#" class="text-gray-400 hover:text-brand transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                     <a href="#" class="text-gray-400 hover:text-brand transition-colors"><i class="fa-brands fa-youtube text-lg"></i></a>
+                     <a href="#" class="text-gray-400 hover:text-brand transition-colors"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                     <a href="#" class="text-gray-400 hover:text-brand transition-colors"><i class="fa-brands fa-pinterest text-lg"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Floating Chat Button (from Images) -->
+        <a href="#" class="fixed bottom-6 right-6 bg-brand text-white p-4 rounded-full shadow-lg hover:bg-brand-dark transition-all z-50 hover:scale-110 flex items-center justify-center">
+            <i class="fa-regular fa-comment-dots text-2xl"></i>
+        </a>
+
+    </footer>
+
+    <script>
+        function toggleAccordion(contentId, btn) {
+            // Only working on mobile/tablet where accordion behavior is desired
+            // We use standard JS to toggle height
+            const content = document.getElementById(contentId);
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            
+            // Close all others if we want "one open at a time" behavior, but standard is multi-open
+            // Let's stick to simple toggle
+            
+            if (isExpanded) {
+                content.style.maxHeight = '0px';
+                content.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.querySelector('.accordion-icon').classList.remove('fa-minus');
+                btn.querySelector('.accordion-icon').classList.add('fa-plus');
+                btn.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+                // The rotation usually turns + into x, but let's just rotate the plus or switch icon
+                // Image 3 shows it becomes "Adropown +" which implies maybe just +? 
+                // Wait, "becomes adropown + ,_ icon". 
+                // Toggle between plus and minus
+                btn.querySelector('.accordion-icon').classList.remove('fa-plus');
+                btn.querySelector('.accordion-icon').classList.add('fa-minus');
+                btn.querySelector('.accordion-icon').style.transform = 'rotate(180deg)'; 
+            }
+        }
+    </script>
+</body>
+</html>
