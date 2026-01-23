@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Variant 15 - Official Content Content | Tripventura</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f3f4f6;
         }
         /* Mobile Accordion Styles */
@@ -37,9 +39,7 @@
                             dark: '#c7000d',
                         }
                     },
-                    letterSpacing: {
-                        'widest': '0.15em',
-                    }
+                        fontFamily: { sans: ['Poppins', 'sans-serif'] }
                 }
             }
         }
@@ -61,14 +61,14 @@
                     <a href="#" class="inline-block mb-6">
                         <span class="text-2xl font-bold tracking-tight text-gray-900">trip<span class="text-brand">ventura</span></span>
                     </a>
-                    <p class="text-gray-500 font-light leading-relaxed text-sm max-w-lg">
+                    <p class="text-gray-500 leading-relaxed text-sm max-w-lg">
                         Our tours are personalized, unique, and expertly crafted to showcase the best of your destination. We're changing the way people connect with the places they visit, and we've already helped millions of travelers.
                     </p>
                 </div>
 
                 <!-- Minimal Newsletter (Kept from V14 for Design Consistency) -->
                 <div class="w-full lg:w-auto min-w-[300px] xl:min-w-[400px]">
-                    <h4 class="text-xs font-bold uppercase tracking-widest mb-4">Join our community</h4>
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Join our community</h4>
                     <div class="relative group">
                          <i class="fa-regular fa-paper-plane absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-brand transition-colors"></i>
                          <input type="email" placeholder="Get travel offers in your inbox..." class="w-full bg-gray-50 border border-gray-200 rounded-full py-3 pl-10 pr-32 text-sm text-gray-900 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand/20 transition-all placeholder-gray-400">
@@ -76,7 +76,7 @@
                              Subscribe
                          </button>
                     </div>
-                    <p class="text-xs text-gray-400 mt-2 font-light">Get exclusive access to deals and travel guides.</p>
+                    <p class="text-xs text-gray-400 mt-2">Get exclusive access to deals and travel guides.</p>
                 </div>
             </div>
 
@@ -89,11 +89,11 @@
                 <!-- COL 1: Navigation -->
                 <div class="border-b border-gray-100 lg:border-none last:border-0">
                     <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-6 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('nav-content', this)" aria-expanded="false">
-                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-900">Navigation</h4>
+                        <h4 class="text-lg font-bold text-gray-900">Navigation</h4>
                         <i class="fa-solid fa-plus text-gray-300 accordion-icon lg:hidden"></i>
                     </button>
                     <div id="nav-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
-                        <ul class="space-y-4 text-sm font-light text-gray-500">
+                        <ul class="space-y-4 text-sm text-gray-500">
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Tours</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Destinations</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Travel Blog</a></li>
@@ -107,11 +107,11 @@
                 <!-- COL 2: Company -->
                 <div class="border-b border-gray-100 lg:border-none last:border-0">
                      <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-6 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('company-content', this)" aria-expanded="false">
-                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-900">Company</h4>
+                        <h4 class="text-lg font-bold text-gray-900">Company</h4>
                         <i class="fa-solid fa-plus text-gray-300 accordion-icon lg:hidden"></i>
                     </button>
                     <div id="company-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
-                        <ul class="space-y-4 text-sm font-light text-gray-500">
+                        <ul class="space-y-4 text-sm text-gray-500">
                             <li><a href="#" class="hover:text-gray-900 transition-colors">About us</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Contact</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Careers</a></li>
@@ -123,11 +123,11 @@
                 <!-- COL 3: Main Destinations -->
                 <div class="border-b border-gray-100 lg:border-none last:border-0">
                      <button class="accordion-btn w-full flex justify-between items-center py-5 lg:py-0 lg:mb-6 lg:cursor-default lg:pointer-events-none group select-none" onclick="toggleAccordion('dest-content', this)" aria-expanded="false">
-                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-900">Destinations</h4>
+                        <h4 class="text-lg font-bold text-gray-900">Destinations</h4>
                         <i class="fa-solid fa-plus text-gray-300 accordion-icon lg:hidden"></i>
                     </button>
                     <div id="dest-content" class="accordion-content lg:max-h-full lg:opacity-100 lg:block lg:pt-0">
-                        <ul class="space-y-4 text-sm font-light text-gray-500">
+                        <ul class="space-y-4 text-sm text-gray-500">
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Dubai</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Alanya</a></li>
                             <li><a href="#" class="hover:text-gray-900 transition-colors">Abu Dhabi</a></li>
@@ -142,9 +142,9 @@
 
                 <!-- COL 4: Payment Methods (Always Visible) -->
                 <div class="border-b border-gray-100 lg:border-none last:border-0 py-5 lg:py-0">
-                     <h4 class="text-xs font-bold uppercase tracking-widest text-gray-900 mb-4">Secure Payment</h4>
+                     <h4 class="text-lg font-bold text-gray-900 mb-4">Secure Payment</h4>
                      <div class="block">
-                        <p class="text-sm font-light text-gray-500 mb-4">We accept all major secure payment methods.</p>
+                        <p class="text-sm text-gray-500 mb-4">We accept all major secure payment methods.</p>
                         <div class="grid grid-cols-3 gap-3 max-w-[240px]">
                             <!-- Using images for key payment methods as listed -->
                             <div class="h-12 bg-gray-50 rounded flex items-center justify-center border border-gray-100" title="Visa"><img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" class="h-8" alt="Visa"></div>
@@ -172,7 +172,7 @@
                 </div>
 
                 <!-- Copyright & Legal -->
-                <div class="text-xs font-light text-gray-400 order-1 md:order-2 flex flex-col items-center md:items-end gap-2 text-center md:text-right">
+                <div class="text-xs text-gray-400 order-1 md:order-2 flex flex-col items-center md:items-end gap-2 text-center md:text-right">
                     <div class="flex flex-wrap justify-center md:justify-end gap-4">
                         <a href="#" class="hover:text-gray-900 transition-colors">Refund policy</a>
                         <a href="#" class="hover:text-gray-900 transition-colors">Privacy policy</a>
